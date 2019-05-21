@@ -16,7 +16,7 @@ async def on_message(message):
         await message.channel.send('Hello!')
 
     if message.content.startswith('!info'):
-        await message.channel.send('Projekt innom programering 1, såkallad slutprojekt. \nSkapad av https://github.com/dovydev - Dovydas Bumblauskas\nVersion: 0.102')
+        await message.channel.send('Projekt innom programering 1, såkallad slutprojekt. \nSkapad av https://github.com/dovydev - Dovydas Bumblauskas\nVersion: 0.105\nIf you found an issue, post it here: https://github.com/Dovydev/Food-Provider-w--Discrod-Bot/issues')
         
     if message.content.startswith('!invite'):
         await message.channel.send('https://discordapp.com/oauth2/authorize?client_id=577830723805773844&scope=bot&permissions=93184')

@@ -12,7 +12,7 @@ z = 0
 
 for x in range(2,7):
     item = soup.select('p')[x].getText().lstrip()
-    fixed1 = re.sub(r'(?<=[a-z])(?=[A-Z])', ' & ', item)
+    fixed1 = re.sub(r'(?<=[a-z])(?=[A-Z])', ' samt ', item)
     regex = re.compile(r'[\n\r\t]')
     fixed1 = regex.sub('', fixed1)
     FoodList.append(fixed1) 
@@ -34,4 +34,5 @@ for line in FoodList:
       dagen = "error - "
     outF.write(dagen+line)
     outF.write("\n")
+outF.write("Provided by Food Service - Dovydev")
 outF.close()
